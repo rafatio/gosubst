@@ -1,24 +1,32 @@
-hash: f539d514593d058711cb14c5e15bcd67324dff42fc1d6d548873af535c1605ba
-updated: 2017-02-26T17:41:11.464354575-03:00
+hash: 09ef30032d5d96c5f753b039bdd7408f5c414600e657299a523c149e25f879d4
+updated: 2019-11-10T22:35:19.983556142Z
 imports:
-- name: github.com/aokoli/goutils
-  version: 9c37978a95bd5c709a15883b6242714ea6709e64
+- name: github.com/google/uuid
+  version: 0cd6bf5da1e1c83f8b45653022c74f71af0538a4
+- name: github.com/huandu/xstrings
+  version: f02667b379e2fb5916c3cda2cf31e0eb885d79f8
+- name: github.com/imdario/mergo
+  version: 1afb36080aec31e0d1528973ebe6721b191b0369
 - name: github.com/inconshreveable/mousetrap
   version: 76626ae9c91c4f2a10f34cad8ce83ea42c93bb75
+- name: github.com/Masterminds/goutils
+  version: 41ac8693c5c10a92ea1ff5ac3a7f95646f6123b0
+- name: github.com/Masterminds/semver
+  version: 805c489aa98f412e79eb308a37996bf9d8b1c91e
 - name: github.com/Masterminds/sprig
-  version: 2d2df7bd8bda53b5a55ed04422173cedd50500ea
-- name: github.com/pelletier/go-buffruneio
-  version: df1e16fde7fc330a0ca68167c23bf7ed6ac31d6d
+  version: e4c0945838d570720d876a6ad9b4568ed32317b4
+- name: github.com/mitchellh/copystructure
+  version: 9a1b6f44e8da0e0e374624fb0a825a231b00c537
+- name: github.com/mitchellh/reflectwalk
+  version: 3e2c75dfad4fbf904b58782a80fd595c760ad185
 - name: github.com/pelletier/go-toml
-  version: d464759235b8fd59f8ab4c44807d7c36e1678add
+  version: 903d9455db9ff1d7ac1ab199062eca7266dd11a3
 - name: github.com/pkg/errors
-  version: 645ef00459ed84a119197bfb8d8205042c6df63d
-- name: github.com/satori/go.uuid
-  version: 879c5887cd475cd7864858769793b2ceb0d44feb
+  version: ba968bfe8b2f7e042a574c888954fccecfa385b4
 - name: github.com/spf13/cobra
   version: 92ea23a837e66f46ac9e7d04fa826602b7b0a42d
 - name: github.com/spf13/pflag
-  version: 9ff6c6923cfffbcd502984b8e0c80539a94968b7
+  version: 2e9d26c8c37aae03e3f9d4e90b7116f5accb7cab
 - name: golang.org/x/crypto
   version: 1351f936d976c60a0a48d728281922cf63eafb8d
   subpackages:
@@ -36,6 +44,6 @@ testImports:
   subpackages:
   - difflib
 - name: github.com/stretchr/testify
-  version: 69483b4bd14f5845b5a1e55bca19e954e827f1d0
+  version: 221dbe5ed46703ee255b1da0dec05086f5035f62
   subpackages:
   - assert
