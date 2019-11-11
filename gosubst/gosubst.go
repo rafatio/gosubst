@@ -51,6 +51,11 @@ func NewSubst(valuesFile string, valuesType string, input io.Reader, output io.W
 
 }
 
+// Function to avoid template escaping
+func noEscape(s string) template.HTML {
+	return template.HTML(s)
+}
+
 // Render render template with the given values
 func (s Subst) Render() error {
 	text, err := ioutil.ReadAll(s.input)
@@ -58,7 +63,7 @@ func (s Subst) Render() error {
 		return err
 	}
 
-	tmpl, err := template.New("base").Funcs(sprig.FuncMap()).Parse(string(text))
+	tmpl, err := template.New("base").Funcs(template.FuncMap{"noEscape": noEscape}).Funcs(sprig.FuncMap()).Parse(string(text))
 	if err != nil {
 		return err
 	}
